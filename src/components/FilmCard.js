@@ -1,13 +1,13 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import FilmCarousal from '../components/FilmCarousal'
 import { useScrollingEffect } from '../utils/useScrollingEffect';
 
 function FilmCard(props) {
-  const { image, title, content, card_link, recent_films } = props.data;
+  const { image, title, content, card_link, film_list } = props.data;
   const idx = props.index;
   useScrollingEffect();
   // console.log(idx);
-  // console.log(image, title, content, card_link, recent_films);
+  console.log(image, title, content, card_link, film_list);
   // console.log(recent_films);
   return (
     <div className='card_section app'>
@@ -19,9 +19,9 @@ function FilmCard(props) {
             <div className='film-card-btn btn'>Watch Now</div>
           </a>
         </div>
-        <a href={card_link} target='_blank'><img className="film-card-image" src={image} alt="error" /></a>
+        {film_list.length != 0 ? <FilmCarousal film_list={film_list} /> :
+          <a href={card_link} target='_blank'><img className="film-card-image" src={image} alt="error" /></a>}
       </div>
-      {recent_films != null ? <FilmCarousal recent_films={recent_films} /> : ""}
     </div>
   )
 }

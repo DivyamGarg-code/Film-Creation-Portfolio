@@ -9,7 +9,7 @@ function ContactSection() {
     return (
         <div className='section_wrapper app' data-aos="fade-up">
             <div className="contact_heading">
-                <Title title={"Contact Us Today"} />
+                <Title title={"Contact Us"} />
                 <span>Let's talk about your cinematic journey.</span>
                 <span>Reach out to us for any inquiries or collaborations.</span>
             </div>
