@@ -6,7 +6,7 @@ function FrontSection() {
   useScrollingEffect();
   return (
     <div className='front_section' data-aos="fade">
-      <img src={require("../images/bg.png")} alt="error" />
+      <img className="front_section_img" src={require("../images/bg.png")} alt="error" />
       <Header />
       <div className='content_section'>
         <span className='h1'>Explore the World of Cinematic Odyssey</span>
