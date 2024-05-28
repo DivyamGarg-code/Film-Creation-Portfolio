@@ -20,7 +20,7 @@ function Header() {
             <div className='w-full border-[1px] border-white'></div>
             <div className='w-full border-[1px] border-white'></div>
           </div>
-          {openNavDropdown ? <div className='absolute top-6 right-0 bg-black opacity-90 px-3 py-2 rounded-lg flex flex-col gap-2'>
+          {openNavDropdown ? <div className='absolute top-6 right-0 bg-black opacity-90 px-3 py-2 rounded-lg flex flex-col gap-2 text-[12px]'>
             <Link to="/about" className='cursor-pointer hover:text-[#AA14F0]'>About</Link>
             <Link to="/services" className='cursor-pointer hover:text-[#AA14F0]'>Services</Link>
             <Link to="/blogs" className='cursor-pointer hover:text-[#AA14F0]'>Blogs</Link>
